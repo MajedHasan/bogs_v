@@ -16,6 +16,7 @@ const MainLayout = ({
   return (
     <>
       <Header />
+      {children}
       <Footer />
     </>
   );

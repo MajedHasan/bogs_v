@@ -15,16 +15,16 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <section className="mx-auto container py-4">
+    <section className="mx-auto container py-4 sticky top-0 bg-white rounded-b-lg shadow-xl">
       <header className="lg:flex items-center justify-between gap-10 hidden">
         <div className="flex items-center gap-14">
           <Link href={"/"}>
             <Image src={"/img/logo.svg"} alt="" width={150} height={100} />
           </Link>
           <nav className="flex items-center md:gap-4 xl:gap-6 text-sm">
-            <Link href={"/jobs"}>JOBS</Link>
-            <Link href={"/jobs"}>CANDIDATES</Link>
-            <Link href={"/jobs"}>AGENCY SERVICES</Link>
+            <Link href={"/find-job"}>JOBS</Link>
+            <Link href={"/find-candidate"}>CANDIDATES</Link>
+            <Link href={"/find-agency"}>AGENCY SERVICES</Link>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-3">
                 NEWS & MORE <ChevronDown size={20} />
