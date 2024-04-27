@@ -19,7 +19,7 @@ const Header = (props: Props) => {
       <header className="lg:flex items-center justify-between gap-10 hidden">
         <div className="flex items-center gap-14">
           <Link href={"/"}>
-            <Image src={"/img/logo.svg"} alt="" width={150} height={100} />
+            <Image src={"/img/logo-2.png"} alt="" width={60} height={100} />
           </Link>
           <nav className="flex items-center md:gap-4 xl:gap-6 text-sm">
             <Link href={"/find-job"}>JOBS</Link>

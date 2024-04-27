@@ -13,27 +13,29 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="">
-      <section className="lg:py-72 md:py-52 py-32 bg-[url('/img/logo.svg')] bg-center bg-cover bg-slate-900 text-white">
-        <div className="container mx-auto text-center">
-          <h2 className="lg:text-4xl text-2xl">
-            Looking for the best Domestic Helpers?
-          </h2>
-          <p className="lg:text-xl text-md mt-12 mb-9">
-            Easily connects Helpers and Employers
-          </p>
-          <div className="flex items-center justify-between flex-col md:flex-row gap-10 mx-auto max-w-lg">
-            <Button
-              asChild
-              className="bg-themeSecondary rounded-full border-2 border-white py-7 px-12"
-            >
-              <Link href={"/find-job"}>FOR HELPERS</Link>
-            </Button>
-            <Button
-              asChild
-              className="bg-themePrimary rounded-full border-2 border-white py-7 px-12"
-            >
-              <Link href={"/find-candidate"}>FOR EMPLOYERS</Link>
-            </Button>
+      <section className="bg-[url('/img/home-page/banner.jpg')] bg-center bg-cover">
+        <div className="lg:py-72 md:py-52 py-32 bg-slate-800/50 text-white">
+          <div className="container mx-auto text-center">
+            <h2 className="lg:text-4xl text-2xl">
+              Looking for the best Domestic Helpers?
+            </h2>
+            <p className="lg:text-xl text-md mt-12 mb-9">
+              Easily connects Helpers and Employers
+            </p>
+            <div className="flex items-center justify-between flex-col md:flex-row gap-10 mx-auto max-w-lg">
+              <Button
+                asChild
+                className="bg-themeSecondary rounded-full border-2 border-white py-7 px-12"
+              >
+                <Link href={"/find-job"}>FOR HELPERS</Link>
+              </Button>
+              <Button
+                asChild
+                className="bg-themePrimary rounded-full border-2 border-white py-7 px-12"
+              >
+                <Link href={"/find-candidate"}>FOR EMPLOYERS</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -218,6 +220,89 @@ export default function Home() {
                 </CardDescription>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto flex lg:flex-row flex-col items-center gap-10">
+          <div className="flex-[3]">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl mt-6 mb-7">
+                More Than 800,000 Connections!
+              </h2>
+              <p className="text-md text-slate-500 leading-6">
+                We offer a free place to allow any domestic helpers to meet you
+                with no middlemen. After your screening process, you will
+                recruit the best helpers for your family.
+              </p>
+              <div className="flex md:flex-row flex-col gap-6 mt-10 text-center mb-6">
+                <Card className="flex-1">
+                  <CardHeader>
+                    <CardTitle>300K</CardTitle>
+                    <CardDescription className="text-themePrimary">
+                      Users
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+                <Card className="flex-1">
+                  <CardHeader>
+                    <CardTitle>100%</CardTitle>
+                    <CardDescription className="text-themeSecondary">
+                      FREE FOR JOB SEEKERS
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+                <Card className="flex-1">
+                  <CardHeader>
+                    <CardTitle>4.8/5</CardTitle>
+                    <CardDescription className="text-themePrimary">
+                      SATISFACTION
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </div>
+              <p className="text-md text-slate-500 leading-6">
+                Get instant access to today’s most powerful hiring tools – post
+                jobs, search resumes, screen candidates and streamline your
+                entire hiring process.
+              </p>
+              <Button
+                asChild
+                size={"lg"}
+                className="mt-7 bg-themePrimary py-7 px-16"
+              >
+                <Link href={"/sign-up"}>REGISTER</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="flex-[2]">
+            <Image
+              src={"/img/home-page/section-03-img.webp"}
+              alt="Img"
+              width={1000}
+              height={1000}
+              className="w-full h-full max-w-sm"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Slider Need to be add */}
+      <section className="py-20 bg-slate-100">
+        <div className="container mx-auto">
+          <div className="flex items-center gap-5">
+            <span className="text-themeSecondary">------</span>
+            <p>AVAILABLE JOBS</p>
+          </div>
+          <h2 className="text-3xl mt-4 mb-8">
+            Local And Western Families Are Looking For You
+          </h2>
+          <div>Slider Will be here</div>
+          <div className="text-right mt-5">
+            <Button asChild className="bg-themePrimary">
+              <Link href={"/find-job"}>Search Job</Link>
+            </Button>
           </div>
         </div>
       </section>
